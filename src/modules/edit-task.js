@@ -1,4 +1,4 @@
-import tasks from "./task-obj";
+import tasks from './task-obj.js';
 // Function to edit task's description
 const editTask = () => {
   const editbtn = document.getElementsByClassName('edit_btn');
