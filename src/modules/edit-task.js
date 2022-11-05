@@ -1,5 +1,4 @@
 import tasks from "./task-obj";
-import addTask from "./addDeleteTask";
 // Function to edit task's description
 const editTask = () => {
   const editbtn = document.getElementsByClassName('edit_btn');
@@ -14,11 +13,6 @@ const editTask = () => {
           tasks[i].description = label[i].innerText;
           localStorage.setItem('tasks', JSON.stringify(tasks));
           label[i].contentEditable = false;
-          let list = document.querySelector('.todo_list');
-          list.innerHTML = '';
-          tasks.forEach((task) => {
-            addTask(task);
-          });  
         }
       });
     });
