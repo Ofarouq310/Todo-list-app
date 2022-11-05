@@ -2,12 +2,12 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #333;
-  background-color: rgb(244, 244, 244);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #e9ecef;
 }
 
 .common_styles {
@@ -80,17 +80,77 @@ body {
   justify-content: space-between;
 }
 
+label {
+  cursor: text;
+}
+
 .dots_icon {
   width: 1.3%;
   height: auto;
+  cursor: pointer;
 }
 
-#clear_list {
+.dot_div {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  left: 14%;
+  border: 1px solid #ccc;
+  border-radius: 3%;
+  width: 150px;
+  height: auto;
+}
+
+.dot_ul {
+  list-style-type: none;
+}
+
+.dot_li {
+  display: block;
+  font-size: 15px;
+}
+
+.dot_btn {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 8px;
+  text-align: left;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  gap: 5px;
+}
+
+.dot_btn:hover {
+  background-color: #d8d7d7;
+  color: rgb(255, 255, 255);
+}
+
+.edit_icon {
+  width: 12%;
+  padding-left: 4px;
+}
+
+.trash_icon {
+  width: 15%;
+}
+
+#clear_btn {
   color: rgba(0, 0, 0);
   height: 7vh;
 }
 
 /* Media Queries */
+
+@media (min-width: 400px) {
+  .dot_div {
+    left: 15%;
+  }
+}
 
 @media (min-width: 600px) {
   .list_placeholder {
@@ -99,6 +159,10 @@ body {
 
   #recycle_icon {
     width: 5%;
+  }
+
+  .dot_div {
+    left: 21%;
   }
 
   .dots_icon {
@@ -123,6 +187,10 @@ body {
     font-size: 18px;
   }
 
+  .dot_div {
+    left: 25%;
+  }
+
   .dots_icon {
     width: 0.6%;
   }
@@ -135,6 +203,10 @@ body {
 
   #recycle_icon {
     width: 4%;
+  }
+
+  .dot_div {
+    left: 20%;
   }
 
   .dots_icon {
