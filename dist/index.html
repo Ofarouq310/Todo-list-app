@@ -3,37 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
 <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 <body>
     <main>
       <section class="container">
-        <img src="./images/recycle.png" alt="recycle" id="recycle_icon"></img>
-
         <div class="list_placeholder">
             <div class="title_icn_container common_styles">
                 <p id="list_title">Today's To Do</p>
+                <img src="./images/recycle.png" alt="recycle" id="recycle_icon"></img>
             </div>
+            
             <input type="text" placeholder="Add to your list..." id="add_task" class="common_styles">
-            <ul class="todo_list">
-                <li class="list_item common_styles">
-                    <input type="checkbox" id="task_1">
-                    <label for="task_1">Task 1</label>
-                </li>
-                <li class="list_item common_styles">
-                    <input type="checkbox" id="task_2">
-                    <label for="task_2">Task 2</label>
-                </li>
-                <li class="list_item common_styles">
-                    <input type="checkbox" id="task_3">
-                    <label for="task_3">Task 3</label>
-                </li>
-            </ul>
-            <button id="clear_list" class="common_styles">Clear all completed</button>
+            
+            <ul class="todo_list"></ul>
+            
+            <button id="clear_btn" class="common_styles">Clear all completed</button>
         </div>
       </section>
     </main>
-    <!-- <script src="index.js"></script> -->
-</body>
+    <script type="module" src="index.js"></script>
+    </body>
 </html>
