@@ -1,3 +1,5 @@
+import tasks from "./task-obj";
+import addTask from "./addDeleteTask";
 // Function to edit task's description
 const editTask = () => {
   const editbtn = document.getElementsByClassName('edit_btn');
@@ -7,9 +9,16 @@ const editTask = () => {
     editbtn[i].addEventListener('click', () => {
       label[i].contentEditable = true;
       label[i].focus();
-      label[i].addEventListener('keydown', (event) => {
-        if (event.keyCode === 13) {
+      label[i].addEventListener('keypress', () => {
+        if (window.event.keyCode === 13) {
+          tasks[i].description = label[i].innerText;
+          localStorage.setItem('tasks', JSON.stringify(tasks));
           label[i].contentEditable = false;
+          let list = document.querySelector('.todo_list');
+          list.innerHTML = '';
+          tasks.forEach((task) => {
+            addTask(task);
+          });  
         }
       });
     });
@@ -19,8 +28,10 @@ const editTask = () => {
     label[i].addEventListener('click', () => {
       label[i].contentEditable = true;
       label[i].focus();
-      label[i].addEventListener('keydown', (event) => {
-        if (event.keyCode === 13) {
+      label[i].addEventListener('keypress', () => {
+        if (window.event.keyCode === 13) {
+          tasks[i].description = label[i].innerText;
+          localStorage.setItem('tasks', JSON.stringify(tasks));
           label[i].contentEditable = false;
         }
       });
