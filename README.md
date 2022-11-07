@@ -67,7 +67,7 @@ To setup the webpage locally: click on "**Code**" (dropdown list) then "**Downlo
 To run the project open the downloaded folder (after extraction) then run the "**index.html**" file in your browser.
 
 
-## Authors
+## Author
 
 👤 **Omar Farouq**
 
@@ -94,4 +94,4 @@ Give a ⭐️ if you like this project!
 
 ## License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
