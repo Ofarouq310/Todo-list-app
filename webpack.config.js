@@ -20,7 +20,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    assetModuleFilename: './images/[name][ext]',
+    assetModuleFilename: './images/[name].[ext]',
   },
   optimization: {
     runtimeChunk: 'single',
@@ -37,7 +37,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: '[name][ext]',
+              name: '[name].[ext]',
               outputPath: 'images/',
               publicPath: 'images/',
             },
