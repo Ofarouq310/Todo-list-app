@@ -1,43 +1,25 @@
 import './style.css';
-import addTask from './modules/addDeleteTask.js';
-import tasks from './modules/task-obj.js';
+import addTask from './modules/add-task.js';
+import refresh from './modules/refresh-list.js';
+import clearAllCompleted from './modules/clear-all.js';
+import syncFunctionality from './modules/sync-function.js';
+import displayDate from './modules/date.js';
+
+// Display the current date
+displayDate();
 
 // Declare function to add tasks to the task-object
-const addItem = document.getElementById('add_task');
-addItem.addEventListener('keypress', () => {
-  if (window.event.keyCode === 13) {
-    if (addItem.value === '') {
-      const task = {
-        index: tasks.length + 1,
-        description: '"Do Task"',
-        completed: false,
-      };
-      tasks.push(task);
-      addTask(task);
-    } else {
-      const task = {
-        index: tasks.length + 1,
-        description: addItem.value,
-        completed: false,
-      };
-      tasks.push(task);
-      addTask(task);
-    }
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }
-});
+addTask();
 
-window.addEventListener('click', (event) => {
-  if (!event.target.matches('.dots_icon')) {
-    const dotDiv = document.getElementsByClassName('dot_div');
-    for (let i = 0; i < dotDiv.length; i += 1) {
-      dotDiv[i].style.display = 'none';
-    }
-  }
-});
+// Declare function to empty and refresh the list
+syncFunctionality();
 
+// Declare function remove all completed tasks
+clearAllCompleted();
+
+// Populate the list of tasks on page load
 window.addEventListener('load', () => {
-  tasks.forEach((task) => {
-    addTask(task);
-  });
+  const bgImage = document.querySelector('.title_icn_container');
+  bgImage.style.backgroundImage = 'url(./images/background-5.png)';
+  refresh();
 });

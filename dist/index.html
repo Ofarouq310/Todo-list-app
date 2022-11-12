@@ -4,25 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
-    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/1ff5e86126.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
 <script defer src="runtime.bundle.js"></script><script defer src="main.bundle.js"></script></head>
 <body>
     <main>
       <section class="container">
+        <div id="date_container">
+            <span id="date"></span>
+        </div>
         <div class="list_placeholder">
             <div class="title_icn_container common_styles">
                 <p id="list_title">Today's To Do</p>
-                <img src="./images/recycle.png" alt="recycle" id="recycle_icon"></img>
+                <i class="fa-solid fa-rotate"></i>
             </div>
             
             <input type="text" placeholder="Add to your list..." id="add_task" class="common_styles">
             
             <ul class="todo_list"></ul>
             
-            <button id="clear_btn" class="common_styles">Clear all completed</button>
+            <button id="clear_btn">CLEAR COMPLETED</button>
         </div>
       </section>
     </main>
-    <script type="module" src="index.js"></script>
+    <!-- <script type="module" src="index.js"></script> -->
     </body>
 </html>
