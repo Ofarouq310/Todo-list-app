@@ -46,7 +46,7 @@
 
 ## Live
 
-[Live Link](https://ofarouq310.github.io/Todo-list-app/)
+[Live Link](https://ofarouq310.github.io/Todo-list-app/dist/)
 
 
 ## Getting Started
