@@ -1,74 +1,102 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# To do list application
+<div align="center">
 
-> A simple to do list application built with modern languages and technologies, giving you the ability to add, remove, and order your added tasks.
+  <img src="https://github.com/Ofarouq310/Microverse_readme-template/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
 
-
-
+</div>
 
 <!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 To-do List <a name="about-project"></a>
+
+- "To-do List" is a simple to do list application built with modern languages and technologies, giving you the ability to add, remove, and order your added tasks.
+
+
+## 🛠 Built With <a name="built-with"></a>
+
+### Tech Stack <a name="tech-stack"></a>
+
 <details>
-  <summary>Table of Contents</summary>
-  <ol>
-        <li><a href="#built-with">Built With</a></li>
-        <li><a href="#live-demo">Live Demo</a></li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#setup">Setup</a></li>
-        <li><a href="#install">Installation</a></li>
-        <li><a href="#usage">Usage</a></li>
-        <li><a href="#run-tests">Run tests</a></li>
-        <li><a href="#deployment">Deployment</a></li>
-      </ul>
-    </li>
-    <li><a href="#authors">Contact</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#show-your-support">Show Support</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#license">License</a></li>
-  </ol>
+  <summary>Languages</summary>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
 </details>
 
 
-## Built With
+<details>
+  <summary>Technologies</summary>
+  <ul>
+    <li>Linters</li>
+    <li>Webpack</li>
+  </ul>
+</details>
 
-#### Major languages:
->- [x] HTML5
->- [x] CSS3
->- [x] Javascript
+<!-- LIVE DEMO -->
 
-#### Technologies used
->- [x] Linters
->- [x] Webpack
+## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Live Demo Link](https://ofarouq310.github.io/Todo-list-app/dist/)
 
-## Live
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Live Link](https://ofarouq310.github.io/Todo-list-app/dist/)
+<!-- GETTING STARTED -->
 
+## 💻 Getting Started <a name="getting-started"></a>
 
-## Getting Started
-
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- A web browser (like Google Chrome, Opera...).
-- A code editor (like Atom, VScode...).
+- Use `git clone` to clone the repository using the HTTPS link into your local machine
 
 ### Setup
 
-To setup the webpage locally: click on "**Code**" (dropdown list) then "**Download ZIP**".
+- `cd` into your local repository
+
+### Install
+
+- `npm install` - Installs the necessary dependencies
+
+### Usage
+
+- `npm run build` - Builds development files into production code
 
 ### Deployment
 
-To run the project open the downloaded folder (after extraction) then run the "**index.html**" file in your browser.
+- `npm start` - Starts the development server
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Author
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Omar Farouq**
 
@@ -76,23 +104,46 @@ To run the project open the downloaded folder (after extraction) then run the "*
 - Twitter: [@Ofaouq310](https://twitter.com/ofarouq310)
 - LinkedIn: [@Ofarouq310](https://www.linkedin.com/in/Ofarouq310/)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+<!-- FUTURE FEATURES -->
 
-Contributions, issues, and feature requests are welcome!
+## 🔭 Future Features <a name="future-features"></a>
 
-Feel free to check the [issues page](../../issues/).
+- [ ] [New styles will be implemented]
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Show your support
+<!-- CONTRIBUTING -->
 
-Give a ⭐️ if you like this project!
+## 🤝 Contributing <a name="contributing"></a>
 
+- Contributions, issues, and feature requests are welcome!
 
-## Acknowledgments
+- Feel free to check the [issues page](../../issues/).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+- If you like this project, please feel free to give a ⭐.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - All thankfulness to Microverse for equipping me with such skills to utilize in real-world projects and applications. 
 
-## License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./LICENSE.md) licensed.
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+- This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
