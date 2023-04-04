@@ -20,4 +20,3 @@ const tasks = [
   },
 ];
 export default tasks;
-console.log(tasks);
