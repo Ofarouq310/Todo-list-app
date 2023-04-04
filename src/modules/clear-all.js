@@ -1,4 +1,4 @@
-import { tasks, modifyTasks } from './task-obj.js';
+import tasks from './task-obj.js';
 import refresh from './refresh-list.js';
 
 const clearAll = document.getElementById('clear_btn');
@@ -7,7 +7,7 @@ const clearAll = document.getElementById('clear_btn');
 const clearAllCompleted = () => {
   clearAll.addEventListener('click', () => {
     const modTasks = tasks.filter((task) => task.completed === false);
-    modifyTasks(modTasks);
+    tasks.splice(0, tasks.length, ...modTasks);
     localStorage.setItem('tasks', JSON.stringify(tasks));
     refresh();
   });

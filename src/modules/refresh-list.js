@@ -1,4 +1,4 @@
-import { tasks } from './task-obj.js';
+import tasks from './task-obj.js';
 import populateListItem from './populate-li.js';
 import { checkAll } from './task-checkbox.js';
 
