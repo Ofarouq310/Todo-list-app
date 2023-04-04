@@ -1,4 +1,4 @@
-import { tasks } from './task-obj.js';
+import tasks from './task-obj.js';
 
 // Declare needed variables
 const addItem = document.getElementById('add_task');

@@ -1,4 +1,4 @@
-import { tasks } from './task-obj.js';
+import tasks from './task-obj.js';
 
 // Function to edit task's description
 const editTask = () => {
@@ -28,6 +28,15 @@ const editTask = () => {
           tasks[i].description = label[i].innerText;
           localStorage.setItem('tasks', JSON.stringify(tasks));
           label[i].contentEditable = false;
+        }
+      });
+      window.addEventListener('click', (e) => {
+        if (label[i].contains(e.target)) {
+          label[i].contentEditable = true;
+          label[i].focus();
+        } else {
+          tasks[i].description = label[i].innerText;
+          localStorage.setItem('tasks', JSON.stringify(tasks));
         }
       });
     });

@@ -1,4 +1,4 @@
-import { tasks } from './task-obj.js';
+import tasks from './task-obj.js';
 import refresh from './refresh-list.js';
 
 // Functipn to display drag icon
